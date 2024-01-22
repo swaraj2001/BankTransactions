@@ -9,7 +9,7 @@ public class ConnectionHelper {
     public static Connection createConnection(){
         Connection connection;
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/j2ee","root" ,"sql123");
+            connection = DriverManager.getConnection("database path","database username" ,"database password");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
